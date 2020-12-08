@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $.getJSON("assets/js/publics.json", function(data){
+        var dataCursos = data.Cursos;
+        $.each(dataCursos, function(){
+            $("div.conteudo").append(`
+            <div id="box-post">
+                <div class="tlt-dsc">
+                    <h2>${this['title']}</h2>
+                    <p id="desc">${this['description']}</p>
+                </div>
+                <iframe src="${this['video']}"></iframe>
+                <div class="bt-group">
+                    <a href="${this['linkAfl']}">Acessar o site oficial do curso</a>
+                </div>
+            </div>`);
+        });        
+    });
+});
