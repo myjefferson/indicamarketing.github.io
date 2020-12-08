@@ -10,7 +10,7 @@ $(document).ready(function(){
                 </div>
                 <iframe src="${this['video']}"></iframe>
                 <div class="bt-group">
-                    <a href="${this['linkAfl']}">Acessar o site oficial do curso</a>
+                    <a href="${this['linkAfl']}" target="_blank">Acessar o site oficial do curso</a>
                 </div>
             </div>`);
         });        
