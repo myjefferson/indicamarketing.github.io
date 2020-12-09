@@ -91,3 +91,35 @@ div.conteudo .tlt-dsc{
 div.conteudo .bt-group{
   padding: 7px 16px 10px 16px;
 }
+
+@media (max-width: 800px){
+  div.categorias{
+    width: 100vw;
+    height: 150px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  div.categorias h2{
+    display: none;
+  }
+  
+  div.categorias ul{
+    text-align: center;
+  }
+  
+  div.categorias ul li{
+    display: inline;
+    margin: 20px;
+  }
+  
+  div.conteudo{
+    position: absolute;
+    top: 170px;
+    left: 0;
+  }
+  
+  div.col-sm-7{
+    max-width: 100%;
+  }
+}
