@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.getJSON("https://raw.githubusercontent.com/myjefferson/indicamarketing.github.io/master/assets/js/publics.json", function(data){
+    $.getJSON("assets/js/publics.json", function(data){
         var dataCursos = data.Cursos;
         $.each(dataCursos, function(){
             $("div.conteudo").append(`
